@@ -29,10 +29,29 @@ angular.module('BND', ['ionic'])
     })
 
     .state('home.mybooks', {
+      abstract: true,
       url: "/mybooks",
       views: {
         "tab-mybooks": {
           templateUrl: "app/home/mybooks.html"
+        }
+      }
+    })
+
+    .state('home.mybooks.myown', {
+      url: "/myown",
+      views: {
+        "tab-mybooks-myown": {
+          templateUrl: "app/home/myown.html"
+        }
+      }
+    })
+
+    .state('home.mybooks.borrowedlent', {
+      url: "/borrowedlent",
+      views: {
+        "tab-mybooks-borrowedlent": {
+          templateUrl: "app/home/borrowedlent.html"
         }
       }
     })
@@ -64,6 +83,6 @@ angular.module('BND', ['ionic'])
       }
     })
 
-
+  $urlRouterProvider.when('/home/mybooks', '/home/mybooks/myown');
   $urlRouterProvider.otherwise('/home/search');
 });

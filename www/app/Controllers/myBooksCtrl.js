@@ -6,7 +6,7 @@
 
 	function myBooksCtrl($scope, $http, $ionicModal, HttpGetApi) {
 	  	HttpGetApi.getBooksList(function (data) {
-	  		$scope.books = data.items; 
+	  		$scope.books = data.items;
 	  	});
 	  	
 	};

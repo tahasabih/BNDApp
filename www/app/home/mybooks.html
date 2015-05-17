@@ -1,9 +1,10 @@
-<ion-view ng-controller="myBooksCtrl">
-	<ion-content>
-		<ion-list>
-	       <ion-item ng-repeat="book in books">
-	       		{{book.volumeInfo.title}}
-	       </ion-item>
-	    </ion-list>
-	</ion-content>
+<ion-view>
+	<ion-tabs class="tabs-top tabs-positive">
+		<ion-tab title="My Own" ui-sref="home.mybooks.myown">
+		    <ion-nav-view name="tab-mybooks-myown"></ion-nav-view>
+		</ion-tab>
+		<ion-tab title="Borrowed/Lent" ui-sref="home.mybooks.borrowedlent">
+		    <ion-nav-view name="tab-mybooks-borrowedlent"></ion-nav-view>
+		</ion-tab>
+	</ion-tabs>		
 </ion-view>
