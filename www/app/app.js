@@ -65,5 +65,5 @@ angular.module('BND', ['ionic'])
     })
 
 
-  $urlRouterProvider.otherwise('/home/mybooks');
+  $urlRouterProvider.otherwise('/home/search');
 });
