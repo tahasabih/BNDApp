@@ -1,5 +1,19 @@
 <ion-view>
 	<ion-content class="has-header">
-		<h1>Search</h1>
+	<div class="title-search">Search</div>
+		<div class="list list-inset">
+		  <label class="item item-input">
+		    <i class="icon ion-search placeholder-icon"></i>
+		    <input type="text" placeholder="Search by Name, Author or ISBN">
+		  </label>
+		</div>
+		<div class="rangebox">
+			<div class="item range">0
+			  <input type="range" name="distance">30km
+			</div>
+		</div>
+		<div class="buttonholder">
+			<div class="button" id="search" type="submit">Search!</div>
+		</div>
 	</ion-content>
 </ion-view>

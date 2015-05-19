@@ -6,7 +6,7 @@
 	function HttpGetApi($http) {
 		var myBooks = []
 		function getBooksList(callback) {
-	    	$http({method : 'GET',url : 'https://www.googleapis.com/books/v1/volumes?q=inauthor:"J. K. Rowling"&maxResults=4'})
+	    	$http({method : 'GET',url : 'https://www.googleapis.com/books/v1/volumes?q=inauthor:"J. K. Rowling"&maxResults=20'})
 	        .success(function(data, status) {
 	            callback(data);
 	        })

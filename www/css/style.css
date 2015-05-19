@@ -1,1 +1,57 @@
-/* Empty. Add your own CSS if you like */
+/*.bar-header {
+  height: 64px !important;
+}
+.bar-header > * {
+  margin-top: 40px !important;
+}
+
+.scroll-content{
+  top:0 !important
+}*/
+
+.title-search {
+	padding-top: 15px;
+	color: blue; 
+	font-family: 'Lato', sans-serif; 
+	font-size: 27px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 1; 
+	text-align: center;
+}
+
+.rangebox {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#search {
+	font-size:16px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	padding:2px 8px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ffffff 39%, #ffffff 66% );
+	background:-ms-linear-gradient( top, #ffffff 39%, #ffffff 66% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(39%, #ffffff), color-stop(66%, #ffffff) );
+	background-color:#ffffff;
+	color:#0;
+	display:inline-block;
+	text-shadow:1px 1px 0px #ffffff;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	box-shadow:inset 1px 1px 0px 0px #ffffff;
+}
+#search:active {
+	position:relative;
+	top:1px;
+}
+
+.buttonholder {
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 8px;
+}
